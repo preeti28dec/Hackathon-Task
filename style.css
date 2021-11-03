@@ -1,0 +1,22 @@
+.wrapper .display, 
+.wrapper span{
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.display #time{
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 3.5px;
+  background: linear-gradient(135deg, #0f756b, #918412, #850876);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate 0.5s linear infinite;
+}
+@keyframes animate {
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}
